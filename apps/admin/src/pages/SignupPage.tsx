@@ -44,7 +44,7 @@ const SignupPage = () => {
               );
               localStorage.setItem("crs_auth_token", login.data.token);
               navigate("/dashboard");
-            } catch (err) {
+            } catch  {
               toast.warning("Invalid Username or Password");
             }
           }}

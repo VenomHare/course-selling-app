@@ -33,7 +33,7 @@ const StudentsPage = () => {
             id: e.id,
             emailId: e.emailId,
             name: e.name,
-            courseName: data?.title!,
+            courseName: data?.title,
             createdAt: e.createdAt
           })
         });

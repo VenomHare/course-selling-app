@@ -4,9 +4,7 @@ import { Label } from './ui/label'
 import { Input } from './ui/input'
 import { Button } from './ui/button'
 import { Course } from "@repo/types"
-import { useEffect, useState } from "react"
-import { ScrollArea } from "./ui/scroll-area"
-import { VisuallyHidden } from "@radix-ui/react-visually-hidden"
+import { useState } from "react"
 import { toast } from "sonner"
 import axios from "axios"
 import { BACKEND_URL } from "@/App"
@@ -29,7 +27,7 @@ const DeleteCourseDail = ({ course, setDialogVisible }: Props) => {
                 });
                 setDialogVisible(false);
                 toast.success("Course Deleted Successfully!");
-            } catch (error) {
+            } catch {
                 toast.error("Failed to Delete Course");
             }
         }

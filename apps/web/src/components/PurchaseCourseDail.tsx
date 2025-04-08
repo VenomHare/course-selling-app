@@ -38,7 +38,7 @@ const PurchaseCourseDail = ({ course, setDialogState }: Props) => {
             setDialogState("done");
 
         }
-        catch (err) {
+        catch  {
             toast.warning("Something went wrong");
             setProcessing(false);
         }

@@ -40,7 +40,7 @@ const CoursesPage = () => {
             const courses: Course[] = purchasesReq.data.courses
             setPurchases(courses.map(e => e.id));
 
-        } catch (err) {
+        } catch  {
             toast.warning("Something went wrong");
         }
 

@@ -17,10 +17,5 @@ export type {
     StudentsRecord,
     UserAuth,
     CourseDailogState,
-    UserCourseDialogState
+    UserCourseDialogState,
 } from "./index"
-
-
-export type {
-    LoginProps
-} from "./shadcn"

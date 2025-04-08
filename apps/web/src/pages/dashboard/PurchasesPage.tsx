@@ -25,7 +25,7 @@ const PurchasePage = () => {
 
             setCourses(req.data.courses);
             setActiveCourse(req.data.courses[0]);
-        } catch (err) {
+        } catch {
             toast.warning("Something went wrong");
         }
     };

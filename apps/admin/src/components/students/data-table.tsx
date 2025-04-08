@@ -100,7 +100,7 @@ export const columns: ColumnDef<tableUser>[] = [
   {
     id: "actions",
     enableHiding: false,
-    cell: ({ row }) => {
+    cell: () => {
 
       return (
         <DropdownMenu>

@@ -33,7 +33,7 @@ const LoginPage = () => {
                             localStorage.setItem("crs_admin_auth", login.data.token);
                             navigate("/dashboard");
                         }
-                        catch(err)
+                        catch
                         {
                             toast.warning("Invalid Username or Password");
                         }

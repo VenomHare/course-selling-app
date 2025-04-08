@@ -18,7 +18,7 @@ interface Props {
 }
 
 const CourseDailog = ({ dailogVisible, setDailogVisible, activeCourse, dialogState, setDialogState, purchases }: Props) => {
-    const [_, setQuery] = useSearchParams();
+    const [, setQuery] = useSearchParams();
     
     return (
         <>

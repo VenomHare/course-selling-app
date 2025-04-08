@@ -2,9 +2,9 @@ import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { LoginProps } from "@repo/types"
+import { LoginFormProps } from "@repo/types"
 
-type Props = LoginProps & React.ComponentProps<"form"> 
+type Props = LoginFormProps & React.ComponentProps<"form"> 
 
 
 export function LoginForm({

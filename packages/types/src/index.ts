@@ -53,7 +53,7 @@ export interface User {
     id: number,
     name: string,
     emailId: string,
-    createdAt : Date
+    createdAt: Date
 }
 
 export type StudentsRecord = Record<number, User[]>
@@ -64,5 +64,6 @@ export interface UserAuth {
     email: string,
 }
 
-export type CourseDailogState = "view"|"edit"|"delete"|"create";
-export type UserCourseDialogState = "view"|"purchase"|"done";
+export type CourseDailogState = "view" | "edit" | "delete" | "create";
+export type UserCourseDialogState = "view" | "purchase" | "done";
+

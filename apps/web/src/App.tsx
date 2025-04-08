@@ -40,7 +40,7 @@ function App() {
         });
         // navigate("/dashboard")
       }
-      catch (err) {
+      catch {
         if (!(location.pathname == "/login" || location.pathname== "/signup"))
         {
           window.location.href = ("/login");

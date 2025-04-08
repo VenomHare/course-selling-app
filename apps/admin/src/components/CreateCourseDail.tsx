@@ -4,12 +4,11 @@ import { Label } from './ui/label'
 import { Input } from './ui/input'
 import { Button } from './ui/button'
 import { Textarea } from "./ui/textarea"
-import { Course, CreateCourseParams, EditCourseParams } from "@repo/types"
-import { useEffect, useState } from "react"
+import { CreateCourseParams } from "@repo/types"
+import { useState } from "react"
 import axios from "axios"
 import { toast } from "sonner"
 import { BACKEND_URL } from "@/App"
-import { useSearchParams } from "react-router-dom"
 interface Props {
     setDialogVisible: React.Dispatch<React.SetStateAction<boolean>>
 }

@@ -2,11 +2,16 @@ import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { LoginProps } from "@repo/types"
 
-type Props = LoginProps & React.ComponentProps<"form"> 
+type Props = LoginFormProps & React.ComponentProps<"form"> 
 
-
+interface LoginFormProps {
+  FormAction: string,
+  onEmailChange: (e: React.ChangeEvent<HTMLInputElement>) => void,
+  onPasswordChange: (e: React.ChangeEvent<HTMLInputElement>) => void,
+  onNavClicked: () => void,
+  onNameChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
+}
 export function LoginForm({
   className,
   onEmailChange,

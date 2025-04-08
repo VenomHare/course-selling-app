@@ -36,7 +36,7 @@ const LoginPage = () => {
                             localStorage.setItem("crs_user_auth", login.data.token);
                             navigate("/dashboard");
                         }
-                        catch (err) {
+                        catch  {
                             toast.warning("Invalid Email or Password");
                         }
                     }}
