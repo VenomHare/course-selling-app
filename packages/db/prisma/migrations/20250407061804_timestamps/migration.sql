@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "CoursePurchased" ADD COLUMN     "purchasedAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP;
